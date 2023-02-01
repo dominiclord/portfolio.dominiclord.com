@@ -23,6 +23,12 @@ export default class extends module {
         })
     }
 
+    update() {
+        if(this.scroll && this.scroll.update) {
+            this.scroll.update()
+        }
+    }
+
     /**
      * Lazy load the related image.
      *

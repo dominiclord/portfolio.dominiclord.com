@@ -3947,6 +3947,11 @@
       this.scroll.on("scroll", (args) => {
       });
     }
+    update() {
+      if (this.scroll && this.scroll.update) {
+        this.scroll.update();
+      }
+    }
     /**
      * Lazy load the related image.
      *
@@ -8686,7 +8691,7 @@
       this.gallery = new core_default(this.container, {
         loop: false,
         speed: 600,
-        slidesPerView: 2.3,
+        slidesPerView: 1.1,
         slideToClickedSlide: true,
         grabCursor: true,
         threshold: 5,
@@ -8704,6 +8709,11 @@
           1e3: {
             slidesPerView: 1.3,
             spaceBetween: 20
+          }
+        },
+        on: {
+          "afterInit": () => {
+            this.call("update", null, "Scroll");
           }
         }
       });

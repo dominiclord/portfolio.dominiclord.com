@@ -6,7 +6,7 @@ $items = [
         'paragraphs' => [
             'Petit banc d\'entrée qui sert à la fois de rangement et d\'assise.',
             'Fabriqué à partir de chutes de plaine. Finition à l\'huile Livos.',
-            'Conception et fabrication automne 2021.',
+            'Conception et fabrication, automne 2021.',
         ],
         'images' => [
             [
@@ -74,9 +74,9 @@ $items = [
     [
         'title'      => 'Table de salon',
         'paragraphs' => [
-            'Assez longue pour y manger à deux, un rangement intégré pour le varia de salon; une table simple et invitante.',
+            'Assez longue pour y manger à deux, un rangement intégré pour les divers items de salon; une table simple et invitante.',
             'Fabriqué à partir de chutes de merisier et de plaine. Finition à l\'huile Livos.',
-            'Conception et fabrication hiver 2022.',
+            'Conception et fabrication, hiver 2022.',
         ],
         'images' => [
             [
@@ -144,7 +144,7 @@ $items = [
     [
         'title'      => 'Vanité de salle de bain',
         'paragraphs' => [
-            'Cette vanité faisait partie d\'un grand projet sur mesure chez Kastella. Elle arbore des poignées finger-grip et de la quincaillerie dissimulée. Une attention particulière a été donnée au surlongueur de matériel pour faciliter l\'installation en chantier.',
+            'Cette vanité faisait partie d\'un grand projet sur mesure chez Kastella. Elle arbore des poignées finger-grip et de la quincaillerie dissimulée. Une attention particulière a été donnée aux surlongueurs de matériau pour faciliter l\'installation en chantier.',
             'Fabriqué en agglo plaqué chêne blanc et mélamine blanche.',
             'Fabrication été 2022.',
         ],
@@ -216,26 +216,12 @@ $items = [
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="theme-color" content="#ffffff">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
     <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#000000">
-    <!-- For a dark mode managment and svg favicon add this in your favicon.svg -->
-    <!--
-            <style>
-                path {
-                    fill: #000;
-                }
-                @media (prefers-color-scheme: dark) {
-                    path {
-                        fill: #fff;
-                    }
-                }
-            </style>
-        -->
-    <!-- <link rel="icon" href="assets/images/favicons/favicon.svg"> -->
 
     <!-- Preload Fonts -->
     <link rel="preload" href="assets/fonts/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -315,6 +301,7 @@ $items = [
                 </div>
             </div>
             <?php endforeach ?>
+            <div data-scroll-section class="c-section u-padding"></div>
         </div>
     </div>
 

@@ -15,7 +15,7 @@ export default class extends module {
         this.gallery = new Swiper(this.container, {
             loop: false,
             speed: 600,
-            slidesPerView: 2.3,
+            slidesPerView: 1.1,
             slideToClickedSlide: true,
             grabCursor: true,
             threshold: 5,
@@ -34,7 +34,12 @@ export default class extends module {
                     slidesPerView: 1.3,
                     spaceBetween: 20
                 }
-            }
+            },
+            on: {
+                'afterInit' : () => {
+                    this.call('update', null, 'Scroll')
+                },
+            },
         })
     }
 
