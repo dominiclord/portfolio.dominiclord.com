@@ -1,9 +1,7 @@
 {
     "private": true,
-    "name": "@locomotivemtl/boilerplate",
-    "title": "Locomotive Boilerplate",
-    "version": "1.0.0",
-    "author": "Locomotive <info@locomotive.ca>",
+    "name": "@dominiclord/portfolio.dominiclord.com",
+    "title": "Portfolio",
     "type": "module",
     "engines": {
         "node": ">=14.17",
@@ -18,6 +16,7 @@
         "modujs": "^1.4.2",
         "modularload": "^1.2.6",
         "normalize.css": "^8.0.1",
+        "swiper": "^7.2.0",
         "svg4everybody": "^2.1.9"
     },
     "devDependencies": {

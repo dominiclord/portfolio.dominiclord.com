@@ -30,7 +30,7 @@
 html {
     min-height: 100%; // [2]
     line-height: $line-height; // [3]
-    font-family: ff("sans");
+    font-family: ff("serif");
     color: $font-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -91,6 +91,10 @@ body {
     background-color: $selection-background-color;
     color: $selection-text-color;
     text-shadow: none;
+}
+
+p {
+    margin: rem($unit-small / 2) 0;
 }
 
 a {

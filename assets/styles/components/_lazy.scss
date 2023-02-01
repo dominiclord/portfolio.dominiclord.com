@@ -1,0 +1,42 @@
+.c-lazy {
+    background-color: var(--color-gray);
+
+    &.-no-bg {
+        background-color: var(--color-bg);
+    }
+
+    &.-white {
+        background-color: $color-lightest;
+    }
+
+    &.-inline-block {
+        display: inline-block;
+    }
+}
+
+.c-lazy_img {
+    opacity: 0;
+
+    html.is-first-loaded & {
+        transition: opacity $speed-slow 0.1s $easing;
+    }
+
+    &.is-inview.-lazy-loaded {
+        html.is-loaded & {
+            opacity: 1;
+        }
+    }
+
+    &.swiper-lazy-loaded {
+        .swiper-container.is-inview &,
+        .c-field-update-modal.is-open & {
+            opacity: 1;
+        }
+    }
+
+    &.-lazy-loaded {
+        .c-field-update-modal_gallery.has-length-1 & {
+            opacity: 1;
+        }
+    }
+}

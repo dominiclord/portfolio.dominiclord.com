@@ -1,0 +1,10 @@
+.c-section {
+    position: relative;
+
+    @media (max-width: $to-medium) {
+        margin-bottom: rem($unit / 2);
+    }
+    @media (min-width: $from-medium) {
+        margin-bottom: rem($unit);
+    }
+}

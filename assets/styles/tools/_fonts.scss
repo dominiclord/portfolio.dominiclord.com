@@ -4,7 +4,7 @@
 
 // Imports the custom font.
 //
-// The mixin expects font files to be woff and woff2.
+// The mixin expects font files to be ttf.
 //
 // @param  {List}   $webfont - A custom font to import, as a tuple:
 //     `<font-name> <font-file-basename> <font-weight> <font-style>`.
@@ -15,8 +15,7 @@
     @font-face {
         font-display: swap;
         font-family: nth($webfont, 1);
-        src: url("#{$dir}#{nth($webfont, 2)}.woff2") format("woff2"),
-             url("#{$dir}#{nth($webfont, 2)}.woff") format("woff");
+        src: url("#{$dir}#{nth($webfont, 2)}.ttf") format("ttf");
         font-weight: #{nth($webfont, 3)};
         font-style: #{nth($webfont, 4)};
     }

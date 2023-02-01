@@ -26,8 +26,10 @@ window.onload = (event) => {
 };
 
 export const EAGER_FONTS = [
-    { family: 'Source Sans', style: 'normal', weight: 400 },
-    { family: 'Source Sans', style: 'normal', weight: 700 },
+    { family: 'Playfair Display', style: 'normal', weight: 400 },
+    { family: 'Playfair Display', style: 'italic', weight: 400 },
+    { family: 'Playfair Display', style: 'normal', weight: 700 },
+    { family: 'Playfair Display', style: 'italic', weight: 700 },
 ];
 
 function init() {

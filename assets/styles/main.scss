@@ -1,7 +1,7 @@
 // ==========================================================================
 // Main
 // ==========================================================================
-$app-env: app-env();  
+$app-env: app-env();
 
 // Settings
 // ==========================================================================
@@ -18,8 +18,8 @@ $app-env: app-env();
 @import "tools/functions";
 @import "tools/mixins";
 @import "tools/fonts";
-// @import "tools/layout";
-// @import "tools/widths";
+@import "tools/layout";
+@import "tools/widths";
 // @import "tools/family";
 
 // Generic
@@ -44,30 +44,34 @@ $app-env: app-env();
 @import "objects/ratio";
 @import "objects/icons";
 @import "objects/grid";
-// @import "objects/layout";
+@import "objects/layout";
 // @import "objects/crop";
 // @import "objects/table";
 
 // Vendors
 // ==========================================================================
-// @import "vendors/vendor";
+@import "node_modules/swiper/swiper-bundle";
 
 // Components
 // ==========================================================================
 
 @import "components/scrollbar";
+@import "components/lazy";
 @import "components/heading";
 @import "components/button";
 @import "components/form";
+@import "components/figure";
+@import "components/section";
+@import "components/gallery";
 
 // Utilities
 // ==========================================================================
 
 @import "utilities/ratio";
 @import "utilities/grid-column";
-// @import "utilities/widths";
-// @import "utilities/align";
-// @import "utilities/helpers";
-// @import "utilities/states";
-// @import "utilities/spacing";
-// @import "utilities/print";
+@import "utilities/widths";
+@import "utilities/align";
+@import "utilities/helpers";
+@import "utilities/states";
+@import "utilities/spacing";
+@import "utilities/print";

@@ -16,6 +16,14 @@
     @include u-truncate;
 }
 
+.u-relative {
+    position: relative;
+}
+
+.u-overflow-hidden {
+    overflow: hidden;
+}
+
 //  Visibility / Display
 // ==========================================================================
 

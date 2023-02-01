@@ -28,7 +28,7 @@ $font-fallback-mono:    Menlo, Consolas, Monaco, Liberation Mono, Lucida Console
 // <font-id>: (<font-name>, <font-fallbacks>)
 // ```
 $font-families: (
-    sans: join("Source Sans", $font-fallback-sans, $separator: comma),
+    serif: join("Playfair Display", $font-fallback-serif, $separator: comma),
 );
 
 // List of custom font faces as tuples.
@@ -37,17 +37,17 @@ $font-families: (
 // <font-name> <font-file-basename> <font-weight> <font-style>
 // ```
 $font-faces: (
-    ("Source Sans", "SourceSans3-Bold",      700, normal),
-    ("Source Sans", "SourceSans3-BoldIt",    700, italic),
-    ("Source Sans", "SourceSans3-Regular",   400, normal),
-    ("Source Sans", "SourceSans3-RegularIt", 400, italic),
+    ("Playfair Display", "PlayfairDisplay-Bold",       700, normal),
+    ("Playfair Display", "PlayfairDisplay-BoldItalic", 700, italic),
+    ("Playfair Display", "PlayfairDisplay-Regular",    400, normal),
+    ("Playfair Display", "PlayfairDisplay-Italic",     400, italic),
 );
 
 // Typography
 // =============================================================================
 
 // Base
-$font-size: 16px;
+$font-size:     16px;
 $line-height:   24px / $font-size;
 $font-color:    $color-darkest;
 
@@ -69,7 +69,8 @@ $font-weight-bold:      700;
 // Transitions
 // =============================================================================
 
-$speed:     0.3s;
+$speed:      0.3s;
+$speed-slow: 0.6s;
 $easing:    $ease-power2-out;
 
 // Spacing Units
